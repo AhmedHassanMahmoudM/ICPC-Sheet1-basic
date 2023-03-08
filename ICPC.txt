@@ -1,0 +1,307 @@
+Q / A 
+.....
+#include <iostream>
+using namespace std;
+int main()
+{
+  int i;long long l;char ch ;float f; double d;
+  cin >> i >> l>>ch>>f>>d;
+  cout<<i<<endl;
+  cout<<l<<endl;
+  cout<<ch<<endl;
+  cout<<f<<endl;
+  cout<<d<<endl;
+ return 0;
+}
+................................................
+Q / B
+.....
+#include <iostream>
+using namespace std;
+int main()
+{
+  long long x;
+  long long   y;
+  cin >>x>>y;
+  long long  sum = x+y;
+  long long mul = x*y;
+  float sub = x-y;
+  cout<<x<<" + "<<y<<" = "<<sum<<endl ;
+  cout<<x<<" * "<<y<<" = "<<mul<<endl ;
+  cout<<x<<" - "<<y<<" = "<<sub<<endl ;
+    return 0;
+}
+.................................................
+Q / C
+.....
+#include <iostream>
+using namespace std;
+int main()
+{
+ long long A , B ,C , D;
+  cin>>A>>B>>C>>D;
+  long long X ;
+   X= (A*B)-(C*D);
+   cout<<"Difference = "<<X<<endl;
+    return 0;
+}
+.................................................
+Q / D
+.....
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+  cout<< fixed << setprecision(9);
+  double R;
+  cin>>R;
+  cout<< (3.141592653*R*R)<<endl;
+    return 0;
+}
+................................................
+
+Q / E
+.....
+#include <iostream>
+using namespace std;
+ int main()
+{
+   long long int N ,M;
+    cin>>N>>M;
+    N=N%10;
+    M=M%10;
+    cout <<N+M<<endl;
+    return 0;
+}
+................................................
+Q / F
+.....
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long N;
+    long long sum;
+    cin>>N;
+    sum = N*(N+1)/2;
+    cout<< sum<<endl;
+    return 0;
+}
+................................................
+Q / G
+.....
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+   float A , B ;
+   cin>>A>>B;
+   cout<<"floor "<< A << " / "<< B << " = "<<floor(A/B)<<endl;
+   cout<<"ceil "<< A << " / "<< B << " = "<<ceil(A/B)<<endl;
+   cout<<"round "<< A << " / "<< B << " = "<<round(A/B)<<endl;
+    return 0;
+}
+.....................................................................
+Q / H
+.....
+#include <iostream>
+using namespace std;
+ int main()
+{
+   int A , B ;
+   cin>>A>>B;
+   if(A >= B)
+    cout<<"Yes"<<endl;
+   else
+    cout<<"No"<<endl;
+   return 0;
+}
+.................................................
+Q / I
+.....
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+int max1(int num1 , int num2){
+    if(num1 > num2){
+        return num1 ;
+    }
+    else if(num1 < num2 ){
+        return num2;
+    }
+ 
+};
+ 
+int min1(int num1 , int num2){
+    if(num1 > num2){
+        return num2 ;
+    }
+    else if(num1 < num2 ){
+        return num1;
+    }
+ 
+};
+ 
+ 
+int main()
+{
+ 
+    int num1 , num2 ;
+    cin>>num1 >>num2;
+    int big =  max1(num1 , num2);
+    int small = min1(num1 , num2);
+ 
+    if(big % small == 0 || small % big == 0 ){
+        cout<<"Multiples";
+    }else{
+    cout<<"No Multiples";
+    }
+ 
+ 
+    return 0;
+}
+.................................................
+Q / J
+.....
+#include <iostream>
+using namespace std;
+ int main()
+{
+   long long  A , B , C;
+    cin>>A>>B>>C;
+    long long min, max;
+    max = min = A;
+    if(B > max) max = B;
+    else if(B < min) min = B;
+    if(C > max) max = C;
+    else if(C < min) min = C;
+    cout<< min <<" "<<max<< endl;
+    return 0;
+}
+...........................................
+Q / K 
+......
+#include <iostream>
+#include <string>
+using namespace std;
+void main()
+{
+    string fName, fName2, lName1, lName2; 
+    cin >> fName>> fName2>>lName1>> lName2;
+    if (fName2 == lName2) 
+        cout << "ARE Brothers";
+    else 
+        cout << "NOT";
+}
+...............................................
+Q / L 
+......
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+ 
+   int num1 , num2 ;
+   char operation ;
+   int result ;
+   cin >> num1 >> operation >> num2 ;
+ 
+    switch(operation)
+    {
+    case '+' :
+        result = num1 + num2 ;
+        break;
+         case '-' :
+        result = num1 - num2 ;
+        break;
+         case '*' :
+        result = num1 * num2 ;
+        break;
+         case '/' :
+        result = num1 / num2 ;
+        break;
+ 
+    }
+    cout<<result;
+ 
+    return 0;
+}
+..............................................
+Q / M 
+......
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <cstring>
+using namespace std;
+void main()
+{
+   
+    string num;
+    cin >> num; 
+    int firstDigit = num[0];
+    if (firstDigit % 2 == 0) {
+        cout << "EVEN";
+    }
+    else {
+        cout << "ODD";
+    }
+}
+................................................
+Q / N 
+......
+#include <iostream>
+using namespace std;
+int main()
+{
+    float x;
+	cin>>x;
+	int y=x;
+	if(x==y)
+	{
+		cout<<"int "<<y<<endl;
+	}
+	else
+	cout<<"float "<<y<<" "<<x-y<<endl;
+	return 0;
+}
+..................................................
+Q / O 
+......
+#include <iostream>
+#include <cmath>
+using namespace std;
+void main()
+{
+    int A, B;
+    char op;
+    cin >> A >> op >> B;
+ 
+ 
+    if (op == '=' && A == B) {
+        cout << "Right";
+    }
+    else if (op == '>' && A > B) {
+        cout << "Right";
+    }
+    else if (op == '<' && A < B) {
+        cout << "Right";
+    }
+    else {
+        cout << "Wrong";
+ 
+    }
+    
+}
+...................................................
+
+
+
+
+
+
+
